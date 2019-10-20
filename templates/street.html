@@ -1,0 +1,23 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Google API Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+  </head>
+  <body>
+
+<select id="query" name="query" method="GET" action="/">
+    {% for streets in query %}
+    <option value="{{streets}}"SELECTED>{{streets}}</option>"
+    {% endfor %}
+</select>
+
+     <button id="search">Search</button>
+
+<p><a href="" id="url" target="_blank">Click to view result!</a></p>
+
+  </body>
+</html>
