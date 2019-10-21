@@ -10,7 +10,7 @@ search_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
 details_url = "https://maps.googleapis.com/maps/api/place/details/json"
 
 connection = psycopg2.connect(user="postgres",
-						  password="boohoo88",
+						  password="********",
 						  host="localhost",
 						  port="5432",
 						  database="demo")
